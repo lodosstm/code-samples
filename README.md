@@ -8,8 +8,8 @@ This repository discloses some samples of our code. You can familiarize yourself
   * Kotlin
   * Java
 * IOS
-  * Swift
-  * Objective C
+  * [Swift](IOS/Swift)
+  * [Objective C](IOS/ObjectiveC)
 * Backend
   * [TypeScript](Backend/TypeScript)
   * [JavaScript](Backend/JavaScript)
