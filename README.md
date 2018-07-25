@@ -6,7 +6,7 @@ This repository discloses some samples of our code. You can familiarize yourself
 
 * Android
   * Kotlin
-  * Java
+  * [Java](Android/Java)
 * IOS
   * [Swift](IOS/Swift)
   * [Objective C](IOS/ObjectiveC)
