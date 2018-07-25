@@ -11,7 +11,7 @@ This repository discloses some samples of our code. You can familiarize yourself
   * Swift
   * Objective C
 * Backend
-  * TypeScript
+  * [TypeScript](Backend/TypeScript/)
   * JavaScript
   * PHP
   * Ruby
