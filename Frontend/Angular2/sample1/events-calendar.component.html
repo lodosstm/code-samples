@@ -1,0 +1,73 @@
+<div class="location-calendar u-pd-top-55 u-pd-bottom-70">
+	<div class="s_wrapper">
+		<div class="location-calendar__filter filter">
+			<h4 class="filter__title">{{filter.title}}</h4>
+			<div class="filter__group" *ngFor="let item of filter.items">
+				<mat-checkbox name="{{item.type}}" id="{{item.type}}" [(ngModel)]="item.model" required>{{item.title}}</mat-checkbox>
+			</div>
+		</div>
+		<div class="location-calendar__body" *ngIfMediaQueryDirective="'(max-width: 992px)'">
+			<ng-template ngFor let-month [ngForOf]="this.dateNames.months | monthsFilter:daysConfig" let-i="index">
+				<mat-expansion-panel *ngIf="month !== 'del'" class="col-xs-12" [expanded]="i === this.curMonth">
+					<mat-expansion-panel-header>
+						<mat-panel-title class="accord-item__header">
+							<p class="accord-item__title">{{month}}</p>
+						</mat-panel-title>
+					</mat-expansion-panel-header>
+					<div class="location-calendar__mobile-row">
+						<div class="location-calendar__mobile-col" *ngFor="let day of this.mobileDays[i]" [ngClass]="{'location-calendar__mobile-col_sep': (isSet(day.events) && day.events.length !== 0)}">
+							<div class="location-calendar__days">
+								<span class="location-calendar__day">{{day.date.getDate()}}</span>
+								<span class="location-calendar__day location-calendar__day_of-week">{{this.dateNames.weekShort[((day.date.getDay() === 0) ? 6 : day.date.getDay() - 1)]}}</span>
+							</div>
+							<div class="location-calendar__events">
+								<div class="location-calendar__event location-calendar__event_multiple-{{event.end ? event.end.getDate() - day.date.getDate() : 0}}"
+								 *ngFor="let event of (day.events | eventsFilter:filter.items)">
+									<a routerLink="{{event.link}}" class="location-calendar__event-text page__link_tdn">{{event.text}}</a>
+								</div>
+								<ng-template [ngIf]="isSet(day.warn)">
+									<div class="location-calendar__event location-calendar__event_warn location-calendar__event_multiple-{{day.warn.end ? day.warn.end.getDate() - day.date.getDate() : 0}}">
+										<span class="location-calendar__event-text">{{day.warn.text}}</span>
+									</div>
+								</ng-template>
+							</div>
+						</div>
+					</div>
+				</mat-expansion-panel>
+			</ng-template>
+		</div>
+		<div class="location-calendar__head u-mr-bottom-60" *ngIfMediaQueryDirective="'(min-width: 993px)'">
+			<a href="javascript:void(0)" class="location-calendar__arrow location-calendar__arrow_left" (click)="prevMonth()">{{this.dateNames.months[this.curMonth - 1] || this.dateNames.months[this.dateNames.months.length - 1] | titlecase}}</a>
+			<h2 class="page__title page__title_small location-calendar__title">{{this.dateNames.months[this.curMonth] | titlecase}}
+				<span class="location-calendar__year">{{this.year}}</span>
+			</h2>
+			<a href="javascript:void(0)" class="location-calendar__arrow location-calendar__arrow_right" (click)="nextMonth()">{{this.dateNames.months[this.curMonth + 1] || this.dateNames.months[0] | titlecase}}</a>
+		</div>
+		<div class="location-calendar__body" *ngIfMediaQueryDirective="'(min-width: 993px)'">
+			<div class="location-calendar__col location-calendar__col_thead" *ngFor="let day of this.dateNames.week">
+				<span class="location-calendar__week">{{day | titlecase}}</span>
+			</div>
+			<div class="location-calendar__col" *ngFor="let day of days" [ngClass]="day.class">
+				<span class="location-calendar__day">{{day.date.getDate()}}</span>
+				<ng-template ngFor [ngForOf]="(day.events | eventsFilter:filter.items)" let-event let-i="index">
+					<div class="location-calendar__event" [ngClass]="event.class">
+						<a routerLink="{{event.link}}" class="location-calendar__event-text page__link_tdn">{{event.text}}</a>
+					</div>
+					<div class="location-calendar__event location-calendar__event_more" *ngIf="(i === 2)">
+						<a href="javascript:void(0)" class="location-calendar__event-text page__link page__link_tdn" (click)="openDialog(day)">{{this.locale === 'nl-NL' ? 'meer' : 'plus'}}</a>
+					</div>
+				</ng-template>
+				<div *ngIf="isSet(day.warn)" class="location-calendar__warn" [ngClass]="day.warn.class">
+					{{day.warn.text}}
+				</div>
+			</div>
+			<div class="location-calendar__col location-calendar__col_foot"></div>
+			<div class="location-calendar__col location-calendar__col_foot"></div>
+			<div class="location-calendar__col location-calendar__col_foot"></div>
+			<div class="location-calendar__col location-calendar__col_foot"></div>
+			<div class="location-calendar__col location-calendar__col_foot"></div>
+			<div class="location-calendar__col location-calendar__col_foot"></div>
+			<div class="location-calendar__col location-calendar__col_foot"></div>
+		</div>
+	</div>
+</div>

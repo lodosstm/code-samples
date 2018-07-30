@@ -18,5 +18,5 @@ This repository discloses some samples of our code. You can familiarize yourself
 * Frontend
   * Bootstrap
   * Vue.js
-  * Angular
+  * [Angular2+](Frontend/Angular2)
   * [React](Frontend/ReactJS)
