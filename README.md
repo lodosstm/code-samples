@@ -5,7 +5,7 @@ Lodoss Team is an IT-company that specializes in web and mobile development of w
 This repository discloses some samples of our code. You can familiarize yourself with them from either the file's root folder or the table of contents below.
 
 * Android
-  * Kotlin
+  * [Kotlin](Android/Kotlin)
   * [Java](Android/Java)
 * IOS
   * [Swift](IOS/Swift)
