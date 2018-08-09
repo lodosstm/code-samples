@@ -1,0 +1,19 @@
+---
+- name: Install python-pycurl
+  apt:
+    pkg: python-pycurl
+    state: present
+  sudo: yes
+
+- name: Install htop
+  apt:
+    pkg: htop
+    state: present
+  sudo: yes
+
+- name: Add our cluster to hosts file
+  lineinfile:
+    dest: /etc/hosts
+    line: "{{ item.host }}"
+  with_items: hosts_resolved
+  sudo: yes

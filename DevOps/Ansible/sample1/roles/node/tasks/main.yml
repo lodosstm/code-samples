@@ -1,0 +1,42 @@
+---
+- name: Install NodeJS dependensies python-software-properties
+  apt:
+    pkg: python-software-properties
+    state: present
+    update-cache: yes
+  sudo: yes
+
+- name: Install NodeJS dependensies python
+  apt:
+    pkg: python
+    state: present
+    update-cache: yes
+  sudo: yes
+
+- name: Install NodeJS dependensies g++
+  apt:
+    pkg: g++
+    state: present
+    update-cache: yes
+  sudo: yes
+
+- name: Install NodeJS dependensies make
+  apt:
+    pkg: make
+    state: present
+    update-cache: yes
+  sudo: yes
+
+- name: Install zlib
+  apt:
+    pkg: zlib1g-dev
+    state: present
+    update-cache: yes
+  sudo: yes
+
+- name: Install NodeJS
+  apt:
+    pkg: nodejs
+    state: present
+    update-cache: yes
+  sudo: yes

@@ -1,0 +1,47 @@
+---
+- name: Add nginx 1.4.x key
+  apt_key:
+    url: http://nginx.org/keys/nginx_signing.key
+    state: present
+  sudo: yes
+
+- name: Add nginx repo
+  apt_repository:
+    repo: deb http://nginx.org/packages/ubuntu/ precise nginx
+    state: present
+  sudo: yes
+
+- name: Install latest nginx
+  apt:
+    pkg: nginx
+    state: present
+    update_cache: yes
+  sudo: yes
+
+- name: Create dir for certs
+  file:
+    path:  /etc/nginx/sha2_certs
+    state: directory
+  sudo: yes
+
+- name: Copy SSL certificates for example
+  copy:
+    src: "{{ item }}"
+    dest: "/etc/nginx/sha2_certs/{{ item }}"
+  with_items:
+    - shopsterhood.com.key
+    - shopsterhood.com.chained.crt
+  sudo: yes
+
+- name: Copy nginx configuration for example
+  template:
+    src: example.conf
+    dest: /etc/nginx/conf.d/example.conf
+  sudo: yes
+  notify: restart nginx
+
+- name: Default nginx config should be removed
+  file:
+    path: /etc/nginx/conf.d/default.conf
+    state: absent
+  sudo: yes

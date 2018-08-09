@@ -1,0 +1,10 @@
+---
+- hosts: remotebalancer
+  vars:
+    blog_stream: *
+    frontend_version: develop
+  roles:
+    - common
+    - node
+    - git
+    - { role: nginxbalancer, tags: ['nginxbalancer'] }
