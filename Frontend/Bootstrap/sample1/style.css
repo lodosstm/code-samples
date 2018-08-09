@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    font-size: 12px;
+}
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+    .client-images a {
+        display: block;
+        margin: 0 auto;
+    }
+}
+.container {
+    min-width: 320px;
+    max-width: 961px;
+    min-height: calc(100vh - 115px);
+}
+.progress-bar {
+    border: 2px solid #9B51E0;
+    margin-bottom: 2rem;
+}
+/* -------------------logo search -------------------*/
+.logo {
+    position: relative;
+    margin-bottom: 0.6rem;
+}
+.logo-rectangle {
+    height: 48px;
+    width: 50px;
+    border: 3px solid #FFC740;
+}
+.logo .super-logo {
+    position: absolute;
+    height: 26px;
+    min-width: 64px;
+    top: 12px;
+    left: 22px;
+    background: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+.search.form-inline .input-group {
+    border: 1px solid #6D3D99;
+    margin-bottom: 1rem;
+    margin-left: 0.3rem;
+    width: 100%;
+}
+.search .input-group-btn {
+    background: #9B51E0;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 2rem;
+}
+.input-group .form-control {
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.input-group .form-control:focus {
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* -------------------menu ----------------------------------*/
+.navbar.navbar-light {
+    margin: 0 -15px 0.5rem -15px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    text-align: center;
+}
+.navbar-collapse .navbar-nav {
+    padding-right: 0;
+}
+.navbar-nav .nav-item {
+    padding: 0;
+    min-height: 3rem;
+}
+.collapse.navbar-collapse .navbar-nav .nav-link {
+    color: black;
+    height: 3rem;
+    line-height: 2rem;
+}
+.collapse .navbar-nav .nav-item.active .nav-link{
+    background: #FFC740;
+    color: white;
+}
+.navbar-nav .nav-link:hover {
+    background: #FFC740;
+    color: black;
+}
+.navbar .navbar-toggler {
+    border: 3px solid #FFC740;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+    width: 50px;
+    height: 48px;
+    padding: 0;
+}
+.navbar.navbar-toggler:focus {
+    border: 3px solid #FFC740;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* ------------------- big image---------------------------------*/
+.big-image {
+    min-height: 332px;
+    background: url("https://s3-alpha.figma.com/img/2a16/4a66/f8b1a52173c4744df41e2f05da64bc9e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T082822Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=33f10a08929c2417b831bb90d851d66b32cf04edd13bc9917a808741a21a33f0") 50% 80% no-repeat;
+    background-size: cover;
+}
+.big-image-darkener {
+    background-color: rgba(0, 0, 0, 0.38);
+}
+.big-image-text {
+    color: white;
+    padding: 1.5rem;
+    font-weight: 100;
+    font-size: 0.875rem;
+    letter-spacing: -0.03rem
+}
+.big-image-text h1 {
+    font-size: 4rem;
+    color: #FFC740;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+.big-image-text .btn-info {
+    background: #6D3D99;
+    border: none;
+}
+/* ------------------- posts---------------------------------*/
+.heading {
+    background: #9B51E0;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding-left: 1.6rem;
+}
+.heading span {
+    background: white;
+    letter-spacing: -0.06rem;
+    font-weight: 700;
+    padding: 2px 0.3rem;
+}
+.post-content .post-text {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: justify;
+    padding-right: 0;
+}
+.post-text a {
+    text-decoration: underline;
+    color: black;
+}
+.about-image {
+    width: 100%;
+    padding-top: 100%;
+    border: 2px solid white;
+    outline: 2px solid #FFC740;
+}
+.posts-line1 .left .post-side .about-image {
+    background: url("https://s3-alpha.figma.com/img/6bbb/1a96/54530f2df310195e9e731c151ece672d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T115617Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=cd6af598f8b2d11e0daf86630465e95e5d2351c458f05ad134f54e9f7e0dde1e") 40% no-repeat;
+    background-size: 120%;
+}
+.posts-line1 .right .post-side .about-image {
+    background: url("https://s3-alpha.figma.com/img/12b2/f0ee/cac5074b0c0cc90f9c27125fe47221e3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T124525Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=24828ff5fdf021a4e53b4bf2894f772d123d17005f91931cada7e4c3c07f34aa") 40% 0 no-repeat;
+    background-size: 190%;
+}
+.posts-line2 .left .post-side .about-image {
+    background: url("https://s3-alpha.figma.com/img/a713/469c/25d71a72cabca78095afe561961c06f3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T124846Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=f3f9146036d1bb56bfafea9c8982381fc94459c15cd40c6da6db236fc798fc7b") 40% 0 no-repeat;
+    background-size: 120%;
+}
+.posts-line2 .right .post-side .about-image {
+    background: url("https://s3-alpha.figma.com/img/26c8/c86d/fc8ea0be2acb6ce33c1f6099a60fcda6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T124953Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=36b6c3b9a844184393e2664839d976ecf0a02f6bffe297f98ecc8abf2f89a40a") 30% 0 no-repeat;
+    background-size: 150%;
+}
+.posts-line1 .right .heading {
+    background: #FFC740;
+}
+
+.posts-line2 .left .heading {
+    background: #FFC740;
+}
+/* ------------------- services---------------------------------*/
+.services a {
+    text-decoration: underline;
+    color: black;
+}
+.services p, .services .item-heading {
+    font-size: 0.75rem;
+}
+.services div:nth-child(1) .heading, .services div:nth-child(3) .heading {
+    background: #FFC740;
+}
+.item-image {
+    width: 100%;
+    padding-top: 100%;
+    border: 1px solid #C4C4C4;
+    margin: 0.1rem 0;
+}
+.middle .item-image.image1 {
+    background: url("https://s3-alpha.figma.com/img/e18f/27bb/9639cbd019b8a0032d825590d431db07?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T132953Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=030d7473f631764d270080102bcf0eadac3273700f12b994643f15286af382f9") 20% 0 no-repeat;
+    background-size: cover;
+}
+.middle .item-image.image2 {
+    background: url("https://s3-alpha.figma.com/img/fd2c/b7a8/bda7499d07d29ee08b52588939e2c703?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T133914Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=78de7298d31c0b4c6b5088898c7da043e0d98fcf2f7493819b3737f94fbf604c") 50% 0 no-repeat;
+    background-size: cover;
+}
+.middle .item-image.image3 {
+    background: url("https://s3-alpha.figma.com/img/c26e/f401/11ee000b1576c1c889a015f6886a4451?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T134135Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=374e413f62972f540e0417bb6419ce18801b133b4a8a98ec4be17dafcd794b19") 50% 0 no-repeat;
+    background-size: cover;
+}
+/*------------------------clients------------------------------*/
+.clients {
+    padding: 0 15px;
+}
+.clients .heading {
+    margin-left: 0;
+}
+/*.clients .client-images {*/
+    /*margin: 0;*/
+/*}*/
+.client-images li {
+    padding: 1rem;
+    margin: 0 10px;
+    display: flex;
+    align-self: center;
+}
+.client-images a {
+    display: block;
+    margin: 0 auto;
+}
+.client-images li a {
+    display: flex;
+    justify-content: center;
+}
+.client-images li img {
+    width: 75%;
+    height: 100%;
+}
+
+.client-images li:nth-child(3) img {
+    width: 145%;
+}
+
+.client-images li:nth-child(4) img {
+    width: 115%;
+}
+
+.col-half-offset{
+    margin-left:4.166666667%
+}
+/*------------------------footer----------------------------------*/
+.footer {
+    margin-top: 1rem;
+    height: 115px;
+    background: #6D3D99;
+    font-size: 0.875rem;
+    color: white;
+    line-height: 115px;
+}

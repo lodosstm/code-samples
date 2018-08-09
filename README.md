@@ -16,7 +16,7 @@ This repository discloses some samples of our code. You can familiarize yourself
   * [PHP](Backend/PHP)
   * [Ruby](Backend/Ruby)
 * Frontend
-  * Bootstrap
+  * [Bootstrap](Frontend/Bootstrap)
   * Vue.js
   * [Angular2+](Frontend/Angular2)
   * [React](Frontend/ReactJS)
