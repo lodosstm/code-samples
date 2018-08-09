@@ -1,0 +1,7 @@
+---
+- name: Install GIT
+  apt:
+    pkg: git
+    state: present
+    update_cache: yes
+  sudo: yes
