@@ -14,7 +14,7 @@ This repository discloses some samples of our code. You can familiarize yourself
   * [TypeScript](Backend/TypeScript)
   * [JavaScript](Backend/JavaScript)
   * PHP
-  * Ruby
+  * [Ruby](Backend/Ruby)
 * Frontend
   * Bootstrap
   * Vue.js
