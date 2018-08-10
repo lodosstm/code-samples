@@ -21,7 +21,7 @@ Sample of React/Redux forms
 
 ## Google Maps
 
-This sample shows using Google Maps for: 
+This sample shows using of Google Maps for: 
 * rendering map and markers
 * updating markers by moving the map viewport
 * rendering complex InfoWindows that are passing Redux Store to their children

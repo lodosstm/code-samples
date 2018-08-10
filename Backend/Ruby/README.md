@@ -1,6 +1,6 @@
 # There are examples of code for Ruby.
 
-There are samples for creating, getting and deleting events and communities. And alse there is controller for comments entity.
+There are samples for creating, getting and deleting events and communities. Also there is controller for comments entity.
 
 ### Files 
 

@@ -1,7 +1,7 @@
 # Kotlin based samples
 
 ## Domain
-This folder contains [Use cases](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) from domain layer. [GetFriendsUseCase](domain/GetFriendsUseCase.kt) fetch data by social network api. [FriendsPresenter](domain/FriendsPresenter.kt) control the data flow usages.
+This folder contains [Use cases](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) from domain layer. [GetFriendsUseCase](domain/GetFriendsUseCase.kt) fetches data by social network api. [FriendsPresenter](domain/FriendsPresenter.kt) controls the data flow usages.
 
 ### Files
 
@@ -10,7 +10,7 @@ This folder contains [Use cases](https://8thlight.com/blog/uncle-bob/2012/08/13/
 * [FriendsPresenter.kt](domain/FriendsPresenter.kt)
 
 ## Custom view behavior
-This folder contains simple ui sample of the [App bar](https://developer.android.com/training/appbar/) with attached [circle button](https://developer.android.com/guide/topics/ui/floating-action-button).
+This folder contains a simple UI sample of an[App bar](https://developer.android.com/training/appbar/) with the attached [circle button](https://developer.android.com/guide/topics/ui/floating-action-button).
 
 <img src="https://media.giphy.com/media/fGFLqXr1ECaemooswt/giphy.gif" />
 

@@ -2,7 +2,7 @@
 
 ## First sample
 
-This sample  code of PHP framework - Laravel. 
+There is a code sample of PHP framework - Laravel. 
 
 There are several files with code:
 * [API for plan identity](sample1/api_plans.php)
@@ -13,5 +13,5 @@ There are several files with code:
 * [User model](sample1/User.php)
 * [User controller](sample1/UserController.php)
 
-This code have 2 identity: user and plan. Every of identity have a contoller and model. Also there are examples of 2 controllers - Home and Event.
+This code has 2 identities: user and plan. Each identity has a contoller and model. Also there are examples of 2 controllers - Home and Event.
 
