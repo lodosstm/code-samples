@@ -4,7 +4,7 @@
 
 ## ContactsDataSource
 
-This component is used to fetch contacts information from local data base or server.  It also provides methods to manage user contacts (filter, search, delete etc.)
+This component is used to fetch contact information from a local data base or server.  It also provides methods to manage user contacts (filter, search, delete etc.)
 
 ### Files
 
@@ -46,7 +46,7 @@ This component is used to save, select, modify and delete data in Contacts datab
 
 ## ContactsAndCallsRelationsDB
 
-This component is used to fetch and manage data in ContactsAndCallsRelations database table.  
+This component is used to fetch and manage data in a ContactsAndCallsRelations database table.  
 
 ### Files
 
@@ -56,7 +56,7 @@ This component is used to fetch and manage data in ContactsAndCallsRelations dat
 
 ## BaseSocketsManager
 
-This component is used to establish and close connection with server using json rpc protocol. It is a wrapper for basic  SocketRocket methods with addition of interruptions handlers.
+This component is used to establish and close connection with a server using json rpc protocol. It is a wrapper for basic SocketRocket methods with addition of interruption handlers.
 
 ### Files
 
@@ -64,7 +64,7 @@ This component is used to establish and close connection with server using json 
 
 ## DriveNetworkManager
 
-This component is used to establish network connection via TCP/IP and implement files related api including methods to upload, download, search, rename files and folders.  
+This component is used to establish a network connection via TCP/IP and implement files related with API including methods for upload, download, search, rename files and folders.  
 
 ### Files
 
@@ -82,14 +82,14 @@ This component is used for common Settings page in average application. It shows
 
 ## ChatListVC
 
-This component is used to display a list of chats in messenger application. Chats with short information (including names and avatars of the people who take part in conversation, the last message, date of the last message etc.) are listed in a table view and sorted by the date of the last message.
+This component is used to display a list of chats in messenger application. Chats with short information (including names and avatars of the people who take part in conversation, the last message, date of the last message etc.) are listed in a table view and sorted by a date of the last message.
 
-Screen has 2 tabs for conversations with your contacts and with ither people.
-When no chats are available for user a special message is shown.
+Screen has 2 tabs for conversations with your contacts and with other people.
+When there is no available chats for user a special message is shown.
 
-In the navigation bar there is a special view for current user's presence status. Users can change their status to "online", "away", "do not disturb" options. Similar presence badges are placed on private chats to show interlocutor's status.
+In the navigation bar there is a special view for current user's presence status. Users can change their status to "online", "away", "do not disturb" options. Similar presence badges are placed on private chats to show an interlocutor's status.
 
-Conponent `ChatListVC` uses component `ChatsContactsTableViewDelegate` as data source and delegate for it's table views.
+Conponent `ChatListVC` uses component `ChatsContactsTableViewDelegate` as a data source and delegate for it's table views.
 
 ### Files
 
@@ -97,7 +97,7 @@ Conponent `ChatListVC` uses component `ChatsContactsTableViewDelegate` as data s
 
 ## ChatsContactsTableViewDelegate
 
-This component is used as data source and delegate for UITableViews. It is created with table view, parent view controller and a pagination delegate object. It fetches data from the local database and provides appropriate methods to show data in the table view.
+This component is used as data source and delegate for UITableViews. It is created with table view, parent view controller and a pagination delegate object. It fetches data from a local database and provides appropriate methods to show data in the table view.
 
 ### Files
 
@@ -105,7 +105,7 @@ This component is used as data source and delegate for UITableViews. It is creat
 
 ## DriveVC
 
-This component is used to show list of folders and file in simple Dropbox like application. Files and folders can be viewed in list and grid modes. Editing mode with ability to perform a certain action on group of selected files is available too. View controller provides functionality to create new folders, download and upload files from device's gallery and share files with user's contacts. If folder contains no files a special message is shown to user.
+This component is used to show a list of folders and files in a simple Dropbox like application. Files and folders can be viewed in list and grid modes. Editing mode with ability to perform a certain action on a group of selected files is available too. View controller provides functionality to create new folders, download and upload files from device's gallery and share files with user's contacts. If folder contains no files a special message is shown to user.
 
 ### Files
 

@@ -4,7 +4,7 @@
 
 ## Post
 
-This component is used to represent Post entity in social network application
+This component is used to represent Post entity in a social network application
 
 ### Files
 
@@ -15,7 +15,7 @@ This component is used to represent Post entity in social network application
 
 ## DataManager
 
-This component provides wrappers for network related code and API implementation.
+This component provides wrappers for a network related code and API implementation.
 
 ### Files
 
@@ -24,7 +24,7 @@ This component provides wrappers for network related code and API implementation
 
 ## NetworkRequestSender
 
-This component contains low-level code and is used to make https requests.  
+This component contains a low-level code and is used to make https requests.  
 
 ### Files
 
@@ -44,7 +44,7 @@ This component provides simple interface for password recovering option.
 
 ## SharePostVC
 
-This component is used to display a post in social network app and provide the ability to share a post with another users.
+This component is used to display a post in social network app and provide an ability to share a post with other users.
 
 ### Files
 
