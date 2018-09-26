@@ -1,0 +1,43 @@
+@import '../../assets/scss/_variables';
+
+.dashboard {
+  position: relative;
+  .create {
+    position: absolute;
+    right: 48px;
+    top: 60px;
+    z-index: 2;
+  }
+
+  .search-container {
+    min-height: 60px;
+    display: flex;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      color: #9c9c9c;
+    }
+
+    &-field {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid $bg-dark;
+      width: 100%;
+      align-self: flex-end;
+      outline: none;
+      padding: 10px 40px;
+    }
+  }
+
+  .result {
+    margin-top: 20px;
+  }
+
+  .no-projects {
+    text-align: center;
+  }
+}
