@@ -39,3 +39,28 @@ This sample shows using svg masks
 
  * [index.jsx](sample4/index.jsx)
  
+## HOC for mouse enter/over detecting
+
+This function is used for detecting mouse enter/over events on any component
+
+### Files
+
+ * [index.js](sample5/index.js)
+ 
+## Render props 
+
+This sample demonstrates implementing and usage render props pattern.
+
+ * IsAuth demonstrates pattern implementing
+ * NewsRating demonstrates pattern usage
+
+### Files
+
+ * [IsAuth.js](sample6/IsAuth.js)
+ * [NewsRating.js](sample6/NewsRating.js)
+ 
+## Next.js
+
+This sample demonstrates redux-store preparing before page rendering by getInitialProps Next.js hook 
+
+ * [index.js](sample7/index.js)
