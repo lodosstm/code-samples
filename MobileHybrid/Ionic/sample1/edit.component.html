@@ -1,0 +1,32 @@
+<ion-content class="edit">
+  <div class="edit__block">
+    <div class="edit__content">
+      <div class="edit__info">
+        <ion-text class="edit__info-title">Edit lot QTY</ion-text>
+        <ion-text class="edit__info-subt">Lot number: {{ lot }}</ion-text>
+      </div>
+
+      <div class="edit__form">
+        <ion-searchbar
+          class="edit__form-input"
+          color="light"
+          placeholder="Enter QTY..."
+          [(ngModel)]="value"
+        ></ion-searchbar>
+
+        <div class="edit__warning" *ngIf="isError">
+          <ion-text class="edit__warning-text">{{ getMessage }}</ion-text>
+        </div>
+
+        <div class="edit__segment">
+          <ion-button mode="ios" class="edit__button" (click)="editQty()">
+            <ion-text class="edit__button-text">Save</ion-text>
+          </ion-button>
+          <ion-button mode="ios" class="edit__button" (click)="cancel()">
+            <ion-text class="edit__button-text">Cnacel</ion-text>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
